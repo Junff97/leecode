@@ -1,15 +1,4 @@
 package leecode;
-
-/**
- * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串 s ，判断字符串是否有效.
- *
- * 输入：s = "()[]{}"
- * 输出：true
- *
- * 输入：s = "([)]"
- * 输出：false
- *
- **/
 import java.util.Stack;
 
 public class lc20 {	
