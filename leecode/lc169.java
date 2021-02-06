@@ -43,7 +43,7 @@ public class lc169 {
 	}
 	
 	
-	//It is easier to use the merge method
+	//Map.merge
 	class Solution2 {
 	    public int majorityElement(int[] nums) {
 	        int limit = nums.length >> 1;
