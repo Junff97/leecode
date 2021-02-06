@@ -29,7 +29,7 @@ public class lc20 {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(isValid("(]"));
+		//System.out.println(isValid("(]"));
 		String s = "{()}()";
 		System.out.println(isValid2(s));
 	}
