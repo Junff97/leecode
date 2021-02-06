@@ -6,7 +6,7 @@ public class lc125 {
 		if (s == "") {
 			return true;
 		}
-		Stack<Character> heap = new Stack<Character>();
+		Stack<Character> stack = new Stack<Character>();
 		StringBuilder strBuilder = new StringBuilder();
 		for (char c : s.toCharArray()) {
 			if (c>='0' && c<='9') {
@@ -17,13 +17,13 @@ public class lc125 {
 		}
 		for (int i = 0; i < strBuilder.length(); i++) {
 			if (i<strBuilder.length()/2) {
-				heap.add(strBuilder.charAt(i));
+				stack.add(strBuilder.charAt(i));
 			}else if (i>strBuilder.length()/2) {
-				if (heap.peek() == strBuilder.charAt(i)) {
-					heap.pop();
+				if (stack.peek() == strBuilder.charAt(i)) {
+					stack.pop();
 				}
 			}
-		}return heap.isEmpty();
+		}return stack.isEmpty();
 	}
 	
 	//Official Answers
