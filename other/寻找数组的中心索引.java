@@ -7,8 +7,10 @@
  *Left side: 1 + 7 + 3 = 11
  *Right side: 5 + 6 = 11
  */
-public class 寻找数组的中心索引 {
+public class 寻找数组中心索引 {
+	
 	public static int pivotIndex(int[] nums) {
+		// use two pointer
         int startPoint = 0;
         int endPoint = nums.length - 1;
         int value = nums[startPoint] - nums[endPoint];
@@ -24,10 +26,9 @@ public class 寻找数组的中心索引 {
         }
         return (value == 0)? startPoint + 1: -1;
 	}
+	
 	public static void main(String[] args) {
 		int [] x = {1,2, 7, 2, 1};
 		System.out.println(pivotIndex(x));
 	}
-	
-	
 }
