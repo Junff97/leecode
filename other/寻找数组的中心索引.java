@@ -28,14 +28,14 @@ public class lc724 {
 				return i;
 			}
         	}
-       /**More easier way
-        * for (int i = 0; i < nums.length; i++) {
-	* 	if (left * 2 + nums[i] == sum) {
-	*		return i;
-	* 	}
-	*	left += nums[i];
-	*}
-	**/
+		/**More easier way
+        	* for (int i = 0; i < nums.length; i++) {
+		* 	if (left * 2 + nums[i] == sum) {
+		*		return i;
+		* 	}
+		*	left += nums[i];
+		*}
+		**/
         return -1;
 	}
 }
