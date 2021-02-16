@@ -37,6 +37,6 @@ public class lc724 {
 		*}
 		**/
         return -1;
-	}
+	} 
 }
 	
