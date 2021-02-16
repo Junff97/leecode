@@ -9,24 +9,34 @@
  */
 public class 寻找数组的中心索引 {
 	public static int pivotIndex(int[] nums) {
-		// use two pointer
-        	int startPoint = 0;
-        	int endPoint = nums.length - 1;
-        	int value = nums[startPoint] - nums[endPoint];
-        	while(endPoint - startPoint > 2){
-            		if(value >= 0){
-                		endPoint -- ;
-                		value -= nums[endPoint];
-            		}else{
-                		startPoint ++;
-                		value += nums[startPoint];
-            		}
+		int left = 0;
+        	int right = 0;
+        	int sum = 0;
+        
+       	 	for (int i : nums) {
+			sum += i;
+		}
+
+        	for (int i = 0; i < nums.length; i++) {
+			if (i == 0) {
+				left = 0;
+			}else {
+				left += nums[i-1];
+			}
+			right = sum - left - nums[i];
+			if (left == right) {
+				return i;
+			}
         	}
-        	return (value == 0)? startPoint + 1: -1;
-	}
-	
-	public static void main(String[] args) {
-		int [] x = {1,2, 7, 2, 1};
-		System.out.println(pivotIndex(x));
+       /**More easier way
+        * for (int i = 0; i < nums.length; i++) {
+	* 	if (left * 2 + nums[i] == sum) {
+	*		return i;
+	* 	}
+	*	left += nums[i];
+	*}
+	**/
+        return -1;
 	}
 }
+	
