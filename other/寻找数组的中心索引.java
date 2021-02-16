@@ -7,7 +7,7 @@
  *Left side: 1 + 7 + 3 = 11
  *Right side: 5 + 6 = 11
  */
-public class 寻找数组的中心索引 {
+public class lc724 {
 	public static int pivotIndex(int[] nums) {
 		int left = 0;
         	int right = 0;
