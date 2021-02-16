@@ -8,7 +8,6 @@
  *Right side: 5 + 6 = 11
  */
 public class 寻找数组的中心索引 {
-	
 	public static int pivotIndex(int[] nums) {
 		// use two pointer
         	int startPoint = 0;
