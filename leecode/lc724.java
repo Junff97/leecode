@@ -36,7 +36,7 @@ public class lc724 {
 		*	left += nums[i];
 		*}
 		**/
-        return -1;
+        return -1; 
 	} 
 }
 	
