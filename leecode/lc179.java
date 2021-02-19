@@ -21,7 +21,7 @@ public class lc179 {
 	    return largestNumberStr;
 	}
 	
-	//×Ô¶¨ÒåÅÅĞò
+	//è‡ªå®šä¹‰æ¯”è¾ƒå™¨
 	class MyComparator implements Comparator<String>{
 		@Override
 		public int compare(String s1, String s2) {
