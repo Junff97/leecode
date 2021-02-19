@@ -30,7 +30,7 @@ public class lc179 {
 	}
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		lc179 x = new lc179();
 		int[] a = {3,30,34,5,9};
 		System.out.println(x.largestNumber(a));
