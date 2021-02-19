@@ -54,7 +54,8 @@ Welcome to **star** and **fork**, my personal wechat: ***Junff753***
 [169.多数元素](https://github.com/Junff97/leecode/blob/junff/leecode/lc169.java)    
 [35.搜索插入位置](https://github.com/Junff97/leecode/blob/junff/leecode/lc35.java)  
 [724.寻找数组的中心索引 ](https://github.com/Junff97/leecode/blob/junff/leecode/lc724.java)  
-[73.矩阵置零（二维数组）](https://github.com/Junff97/leecode/blob/junff/leecode/lc73.java) 
+[73.矩阵置零（矩阵）](https://github.com/Junff97/leecode/blob/junff/leecode/lc73.java)  
+[面试题 01.07. 旋转矩阵](https://github.com/Junff97/leecode/blob/junff/other/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5.java)
 
  
 
