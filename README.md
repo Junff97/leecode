@@ -46,7 +46,13 @@ Welcome to **star** and **fork**, my personal wechat: ***Junff753***
 199.二叉树的右视图  
 
 ## 字符串
-[125.验证回文串](https://github.com/Junff97/leecode/blob/junff/leecode/lc125.java)   
+[125.验证回文串](https://github.com/Junff97/leecode/blob/junff/leecode/lc125.java)
+[179.最大数](https://github.com/Junff97/leecode/blob/junff/leecode/lc179.java)  
+[20.有效的括号](https://github.com/Junff97/leecode/blob/junff/leecode/lc20.java)  
 
 ## 数组（List） 
 [169.多数元素](https://github.com/Junff97/leecode/blob/junff/leecode/lc169.java)    
+[35.搜索插入位置](https://github.com/Junff97/leecode/blob/junff/leecode/lc35.java) 
+[724.寻找数组的中心索引 ](https://github.com/Junff97/leecode/blob/junff/leecode/lc724.java)  
+ 
+
