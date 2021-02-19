@@ -1,3 +1,5 @@
 # LeetCode Solutions
 
-> Leetcode problem solving records and each problem has a representative topic of the summary, because Leetcode has long been from 150 questions into the current era of a thousand questions, I am here as much as possible to do a preferential selection, but also hope that my project can help other viewers to master the corresponding knowledge points faster.
+Leetcode's problem solving records and each problem has a representative topic summary, because Leetcode has long gone from 150 questions to the current era of thousands of questions, I am here to make a preferential selection as much as possible, but also hope that my project can be helpful to myself and others to master the corresponding knowledge.
+
+Welcome to ** star ** and ** fork **, my personal wechat: ** Junff753 **
