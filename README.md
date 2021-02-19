@@ -2,9 +2,9 @@
 
 Leetcode's problem solving records and each problem has a representative topic summary, because Leetcode has long gone from 150 questions to the current era of thousands of questions, I am here to make a preferential selection as much as possible, but also hope that my project can be helpful to myself and others.
 
-Welcome to **star** and ***fork***, my personal wechat: ***Junff753***
+Welcome to **star** and **fork**, my personal wechat: ***Junff753***
 
-## Tree
+## 树（Tree）
 ### --遍历(Traversal)
 94.二叉树的中序遍历(Inorder traversal)  
 102.二叉树的层次遍历(Level traversal)     
@@ -46,4 +46,7 @@ Welcome to **star** and ***fork***, my personal wechat: ***Junff753***
 199.二叉树的右视图  
 
 ## 字符串
-[125.验证回文串](https://github.com/Junff97/leecode/blob/junff/leecode/lc125.java)  
+[125.验证回文串](https://github.com/Junff97/leecode/blob/junff/leecode/lc125.java)   
+
+## 数组（List） 
+[169.多数元素](https://github.com/Junff97/leecode/blob/junff/leecode/lc169.java)    
