@@ -19,3 +19,7 @@ Welcome to **star** and **fork**, my personal wechat: **Junff753**
 
 #### --广度优先搜索
 116.填充每个节点的下一个右侧节点指针 199.二叉树的右视图
+
+##字符串
+
+[125.验证回文串](https://github.com/Junff97/leecode/blob/junff/leecode/lc125.java)
