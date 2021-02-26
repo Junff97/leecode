@@ -5,27 +5,27 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
 public class lc17 {
 	
-	//Ë«À¨ºÅ³õÊ¼»¯HashmapÀ´´¢´æÊı×Ö¶ÔÒıµÃ×ÖÄ¸
+	/*
+	 *ç¬¬ä¸€ç§æ–¹æ³•ï¼Œé€’å½’æœç´¢
+	*/
 	@SuppressWarnings("serial") 
 	public static Map<Character, String[]> map = new HashMap<Character, String[]>(){{
 		put('2', new String[]{"a", "b", "c"});
-        put('3', new String[]{"d", "e", "f"});
-        put('4', new String[]{"g", "h", "i"});
-        put('5', new String[]{"j", "k", "l"});
-        put('6', new String[]{"m", "n", "o"});
-        put('7', new String[]{"p", "q", "r", "s"});
-        put('8', new String[]{"t", "u", "v"});
-        put('9', new String[]{"w", "x", "y", "z"});
+        	put('3', new String[]{"d", "e", "f"});
+        	put('4', new String[]{"g", "h", "i"});
+        	put('5', new String[]{"j", "k", "l"});
+        	put('6', new String[]{"m", "n", "o"});
+        	put('7', new String[]{"p", "q", "r", "s"});
+        	put('8', new String[]{"t", "u", "v"});
+        	put('9', new String[]{"w", "x", "y", "z"});
 	}};
-	
 	public static List<String> letterCombinations(String digits) {
-		//´´½¨Ò»¸ö·µ»Ø×îºó½á¹ûµÄÁĞ±í
+		//åˆ›å»ºä¸€ä¸ªè¿”å›æœ€åç»“æœçš„åˆ—è¡¨
 		List<String> ans = new ArrayList<String>();
 		
-		//´´½¨Ò»¸ö¿ÉÒÔĞŞ¸ÄµÄStringBuilder£¬À´´¢´æÃ¿Ò»´ÎËÑË÷µÄÖµ
+		//åˆ›å»ºä¸€ä¸ªå¯ä»¥ä¿®æ”¹çš„StringBuilderï¼Œæ¥å‚¨å­˜æ¯ä¸€æ¬¡æœç´¢çš„å€¼
 		StringBuilder res = new StringBuilder();
 		
 		if("".equals(digits)) return ans;
@@ -34,7 +34,7 @@ public class lc17 {
 	}
 	
 	public static void search(String digits, int index, StringBuilder res, List<String> ans) {
-		//·µ»Ø½á¹ûÊÇ±éÀúÍêdigits×îºó×Ö·ûµÄÊı×é£¬·µ»Ø
+		//è¿”å›ç»“æœæ˜¯éå†å®Œdigitsæœ€åå­—ç¬¦çš„æ•°ç»„ï¼Œè¿”å›
 		if (index == digits.length()) {
 			ans.add(res.toString());
 			return;
@@ -46,13 +46,14 @@ public class lc17 {
 			search(digits, index + 1, res, ans);
 			System.out.println(res.toString());
 			
-			//Ã¿Ò»´Îsearch²¢ÇÒ³É¹¦¼ÇÂ¼µ½ansÀïÖ®ºóÒªÉ¾³ıStringBilderÇ°Ò»Î»
+			//æ¯ä¸€æ¬¡searchå¹¶ä¸”æˆåŠŸè®°å½•åˆ°ansé‡Œä¹‹åè¦åˆ é™¤StringBilderå‰ä¸€ä½
 			res.deleteCharAt(res.length()-1);
 		}
 	}
 	
 	/**
-	 * ÀûÓÃÁ´±íÌØĞÔ£¬±ÈÈç123£¬´«ÈëÏÈ½«'1'Êı×é¼ÓÈëÁ´±í£¬µÃµ½c,b,a,ÔÙÉ¾³ı±íÍ·µÄa£¬±éÀú'2'Êı×éµÃµ½'ad,ae,af',²¢¼ÓÈëÁ´±í£¬Í¬Àí
+	 * ç¬¬äºŒç§æ–¹æ³•
+	 * åˆ©ç”¨é“¾è¡¨ç‰¹æ€§ï¼Œæ¯”å¦‚123ï¼Œä¼ å…¥å…ˆå°†'1'æ•°ç»„åŠ å…¥é“¾è¡¨ï¼Œå¾—åˆ°c,b,a,å†åˆ é™¤è¡¨å¤´çš„aï¼Œéå†'2'æ•°ç»„å¾—åˆ°'ad,ae,af',å¹¶åŠ å…¥é“¾è¡¨ï¼ŒåŒç†
 	 */
 	public static List<String> letterCombinations2(String digits) {
 		LinkedList<String> ans = new LinkedList<String>();
