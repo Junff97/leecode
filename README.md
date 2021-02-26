@@ -49,6 +49,7 @@ Welcome to **star** and **fork**, my personal wechat: ***Junff753***
 [125.验证回文串](https://github.com/Junff97/leecode/blob/junff/leecode/lc125.java)  
 [179.最大数](https://github.com/Junff97/leecode/blob/junff/leecode/lc179.java)  
 [20.有效的括号](https://github.com/Junff97/leecode/blob/junff/leecode/lc20.java)  
+[387.字符串中的第一个唯一字符](https://github.com/Junff97/leecode/blob/junff/leecode/lc387.java) 
 
 ## 数组（List） 
 [169.多数元素](https://github.com/Junff97/leecode/blob/junff/leecode/lc169.java)    
