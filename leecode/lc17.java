@@ -8,7 +8,7 @@ import java.util.Map;
 public class lc17 {
 	
 	/*
-	 *第一种方法，递归搜索
+	 *第一种方法回溯思想，DFS
 	*/
 	@SuppressWarnings("serial") 
 	public static Map<Character, String[]> map = new HashMap<Character, String[]>(){{
@@ -52,7 +52,7 @@ public class lc17 {
 	}
 	
 	/**
-	 * 第二种方法
+	 * 第二种方法 BFS
 	 * 利用链表特性，比如123，传入先将'1'数组加入链表，得到c,b,a,再删除表头的a，遍历'2'数组得到'ad,ae,af',并加入链表，同理
 	 */
 	public static List<String> letterCombinations2(String digits) {
@@ -70,7 +70,36 @@ public class lc17 {
 		}
 		return ans;
 	}
-
+	
+	//利用链表的BFS
+	public static List<String> letterCombinations3(String digits) {
+		List<String> ans = new ArrayList<String>();
+				
+		LinkedList<String> queue = new LinkedList<String>();
+		queue.add("");
+		if("".equals(digits)) return ans;
+		search2(digits, 0, queue, ans);
+		return ans;		
+	}
+	
+	public static void search2(String digits, int index, LinkedList<String> queue, List<String> ans) {
+		if (index == digits.length()) {
+			int size = queue.size();
+			for (int i = 0; i < size; i++) {ans.add(queue.remove());}
+			return;
+		}
+		char x = digits.charAt(index);
+		String[] x_list = map.get(x);
+		while (queue.peek().length() <= index || queue.isEmpty()) {
+			String x2 = queue.remove();
+			for (int j = 0; j < x_list.length; j++) {
+				queue.add(x2 + x_list[j]);
+			}
+		}
+		search2(digits, index + 1, queue, ans);
+	}
+	
+	
 	public static void main(String[] args) {
 		String x = "293";
 		System.out.println(letterCombinations2(x));
