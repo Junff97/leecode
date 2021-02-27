@@ -93,10 +93,12 @@ Welcome to **star** and **fork**, my personal wechat: ***Junff753***
    --双向链表
       146.LRU缓存机制
 
-DFS
+## DFS（深度优先）
+      [17.电话号码的组合](https://github.com/Junff97/leecode/blob/junff/leecode/lc17.java)   
       113.路径总和II 130.被围绕的区域 200.岛屿数量 417.太平洋大西洋水流问题 473.火柴拼正方形 695.岛屿的最大面积 785.判断二分图 934.最短的桥 1254.统计封闭岛屿的数目
 
-BFS
+## BFS（广度优先）
+      [17.电话号码的组合](https://github.com/Junff97/leecode/blob/junff/leecode/lc17.java)  
       542.01矩阵 994.腐烂的橘子 1293. 网格中的最短路径 1311.获取你好友已观看的视频
 
 建议这些题目都用DFS和BFS两种方法做一遍
