@@ -1,22 +1,21 @@
 package leecode;
 
 import java.util.Arrays;
-
 public class lc43 {
 	public static String multiply(String num1, String num2) {
 		if ((num1.length()==1&&num1.equals("0"))||(num2.length()==1&&num2.equals("0")))return "0";
 		StringBuilder res = new StringBuilder();
 		
-		//×÷Îª´¢´æ½á¹ûµÄÊı×é
+		//ä½œä¸ºå‚¨å­˜ç»“æœçš„æ•°ç»„
 		int[] ans = new int[num1.length() + num2.length()];
-		//×÷ÎªÖü´æ½øÎ»µÄÊı×é
+		//ä½œä¸ºè´®å­˜è¿›ä½çš„æ•°ç»„
 		int[] carryBit = new int[num1.length() + num2.length()];
 		
 		Arrays.fill(ans, 0);
 		Arrays.fill(carryBit, 0);
 		
 		/*
-		 * ½«Á½¸öÊı×é×ª»¯³ÉintÀàĞÍÊı×é·½±ã¼ÆËã¡£
+		 * å°†ä¸¤ä¸ªæ•°ç»„è½¬åŒ–æˆintç±»å‹æ•°ç»„æ–¹ä¾¿è®¡ç®—ã€‚
 		 */
 		int[] num1List = new int[num1.length()];
 		int[] num2List = new int[num2.length()];
@@ -33,7 +32,7 @@ public class lc43 {
 				int new_carrybit = (ans[i + j -1] + num1List[i-1] * num2List[j-1] + carryBit[i + j -1]);
 				ans[i + j -1] = new_value;
 				if (new_carrybit >= 10) {
-					//Èç¹û¼ÆËãµ½×îºóÒ»Î»Ö±½Ó½«½øÎ»¼ÓÈë½á¹ûÊı×é£¬²»´¢´æÔÚ½øÎ»Êı×é
+					//å¦‚æœè®¡ç®—åˆ°æœ€åä¸€ä½ç›´æ¥å°†è¿›ä½åŠ å…¥ç»“æœæ•°ç»„ï¼Œä¸å‚¨å­˜åœ¨è¿›ä½æ•°ç»„
 					if(j != 1) {
 						carryBit[i + j - 2] = new_carrybit/10;
 					}else {
@@ -57,7 +56,7 @@ public class lc43 {
     }
 	
 	
-	//¸üºÃµÄ·½·¨½«½øÎ»Ö±½Ó¼ÓÈëµ½Ç°Ò»Î»
+	//æ›´å¥½çš„æ–¹æ³•å°†è¿›ä½ç›´æ¥åŠ å…¥åˆ°å‰ä¸€ä½
 	public static String multiply2(String num1, String num2) {
 		if ((num1.length()==1&&num1.equals("0"))||(num2.length()==1&&num2.equals("0")))return "0";
 		int[] ans = new int[num1.length() + num2.length()];
@@ -73,25 +72,11 @@ public class lc43 {
 			}
 		}
 		StringBuilder result = new StringBuilder();
-        for (int i = 0; i < ans.length; i++) {
-            if (i == 0 && ans[i] == 0) continue;
-            result.append(ans[i]);
-        }
-        return result.toString();
-	}
-
-	public static void main(String[] args) {
-		System.out.println(multiply2("6","19"));
+        	for (int i = 0; i < ans.length; i++) {
+            		if (i == 0 && ans[i] == 0) continue;
+           			result.append(ans[i]);
+       			}
+        		return result.toString();
+		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
