@@ -17,7 +17,7 @@ public class lc35 {
 		}return -1;
     }
 	
-	//¶þ·Ö·¨
+	//äºŒåˆ†æ³•
 	public static int searchInsert2(int[] nums, int target) {
 		int n = nums.length;
 		int left = 0, right = n - 1, ans = n;
