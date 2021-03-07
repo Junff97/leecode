@@ -17,7 +17,11 @@ public class lc35 {
 		}return -1;
     }
 	
+<<<<<<< HEAD
 	//¶þ·Ö·¨(left <= right)
+=======
+	//äºŒåˆ†æ³•
+>>>>>>> 2ee8ce2ace295fdff8b931a77ae9cf7aa0e28881
 	public static int searchInsert2(int[] nums, int target) {
 		int n = nums.length;
 		int left = 0, right = n - 1;
